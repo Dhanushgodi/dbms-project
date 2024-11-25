@@ -80,7 +80,7 @@ const PostBranch = ()=>{
     <tr>
       <th scope="col">#</th>
       <th scope="col">Branch Name</th>
-      <th scope="col">House No</th>
+      <th scope="col">Office No</th>
       <th scope="col">City</th>
       <th scope="col">Zip Code</th>
       <th scope="col"></th>

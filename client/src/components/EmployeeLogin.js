@@ -14,7 +14,7 @@ const EmployeeLogin = ()=>{
     <br></br>
 <h1 className="mt-5 mb-5" style={{textAlign : "center"}}>Employee Login</h1>
 <div className="border container p-0 shadow-lg p-3 mb-5 bg-white rounded "  style={{display: 'flex',  justifyContent:'center'}}>
-    <img src={employee} alt="customer missing" className="rounded mx-auto d-block ml-10 mr-10 flex-left p-5" height="400px"></img>
+    <img src={employee} alt="user missing" className="rounded mx-auto d-block ml-10 mr-10 flex-left p-5" height="400px"></img>
     
     <form className='container flex-right p-5 ' onSubmit = {()=>EmployeeLogin} style={{alignSelf : "right"}} action='http://localhost:3000/employee' method='get' >
 

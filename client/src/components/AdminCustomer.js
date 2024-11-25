@@ -53,13 +53,13 @@ const PostCustomer = ()=>{
     return (
         <div>
            <button className="btn btn-lg btn-outline-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-   Add Customer
+   Add User
   </button>
         
         <div className='collapse' id='collapseExample'>
 
         <form className='container border p-5 mt-5' onSubmit={PostCustomer}>
-        <h1>Add Customer</h1>
+        <h1>Add User</h1>
             <hr></hr>
   <div className="form-group">
     <label>Name</label>
@@ -85,7 +85,7 @@ const PostCustomer = ()=>{
 </div>
 <hr></hr>
           <div className='p-5'>
-<h1 style={{textAlign : 'center'}}>All Customers</h1>
+<h1 style={{textAlign : 'center'}}>All Users</h1>
 <table className="table">
   <thead className="thead-dark">
     <tr>

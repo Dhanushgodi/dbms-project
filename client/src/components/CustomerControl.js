@@ -89,7 +89,7 @@ const CustomerControl = ()=>{
     return (
 <div>
     <div className='border p-5' style={{backgroundColor : '#006d77'}}>
-    <h1 className='mt-5' style={{textAlign : 'center', color : '#e5e5e5'}}>Customer Details</h1>
+    <h1 className='mt-5' style={{textAlign : 'center', color : '#e5e5e5'}}>User Details</h1>
     <hr style={{color : '#FFFFFF'}}></hr>
     <img src={avatar} alt='missing avatar' className='rounded mx-auto d-block'></img>
     <h3 className='mt-5' style={{textAlign : 'center', color : '#e5e5e5'}}>username@{username}</h3>
@@ -98,7 +98,7 @@ const CustomerControl = ()=>{
 <h2>Personal Details</h2>
 <div className="input-group mb-3 mt-3">
   <div className="input-group-prepend">
-    <span className="input-group-text" id="basic-addon1">customerid@</span>
+    <span className="input-group-text" id="basic-addon1">licenseno@</span>
   </div>
   <input type="text" value={id} className="form-control" placeholder="id" aria-label="Username" aria-describedby="basic-addon1" readOnly/>
 </div>
@@ -139,10 +139,10 @@ const CustomerControl = ()=>{
   <input type="text" value={zipcode} className="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1" readOnly/>
 </div>
 <hr></hr>
-<button className='btn btn-outline-info'data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> Create Account</button>
+<button className='btn btn-outline-info'data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> Create Fine</button>
 
 <button class="btn btn-outline-primary ml-3" type="button" data-toggle="collapse" data-target="#AccountDetails" aria-expanded="false" aria-controls="collapseExample" onClick={GetAccountDetails}>
-    Get Account Details
+    Get Fine Details
   </button>
 
   <button class="btn btn-success ml-3" onClick={GetTransactions} type="button" data-toggle="collapse" data-target="#alltransaction" aria-expanded="false" aria-controls="collapseExample">
@@ -152,9 +152,9 @@ const CustomerControl = ()=>{
 <div className="collapse" id="collapseExample">
 
 <div className="form-group shadow p-3 mb-5 bg-white rounded mt-3">
-  <label>Customer Id</label>
+  <label>License Number</label>
   <input type="text" value={id} className="form-control mb-3" id="customer_id_value" name="username" aria-describedby="emailHelp" disabled  required/>
-  <label >Balance</label>
+  <label >Fine Amount</label>
   <input type="text" className="form-control" id="exampleInputPassword1" onChange = {e=> setBalance(e.target.value)}  required/>
     
 <button className="btn btn-primary btn-lg mt-3" onClick={AddAccount}>Add</button>
@@ -168,7 +168,7 @@ const CustomerControl = ()=>{
   <thead class="thead-light">
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Account ID</th>
+      <th scope="col">Fine ID</th>
       <th scope="col">Action</th>
       <th scope="col">Amount</th>
       <th scope="col">Branch ID</th>
@@ -196,15 +196,15 @@ const CustomerControl = ()=>{
 <div className="card shadow-lg p-3 mb-5 bg-white rounded collapse" id="AccountDetails" key = {account.account_id}>
 
 <hr className='mt-5'></hr>
-<h1 style={{textAlign : 'left'}}>Savings Account</h1>
+<h1 style={{textAlign : 'left'}}>Fine Details</h1>
 <hr></hr>
   <div className="card-header">
-    Account #{MyAccounts.indexOf(account)+1}
+    Fine #{MyAccounts.indexOf(account)+1}
   </div>
   <div className="card-body">
     <div className="input-group mb-3">
      <div className="input-group-prepend">
-      <span className="input-group-text" id="basic-addon3">@account no</span>
+      <span className="input-group-text" id="basic-addon3">@fineno</span>
      </div>
      <input type="text" value={account.account_id} name='account_no' className="form-control" aria-describedby="basic-addon3" readOnly/>
     </div>

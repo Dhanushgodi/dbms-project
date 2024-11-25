@@ -15,11 +15,11 @@ const EmployeeControl = ()=>{
       <td>
         <div className="card text-black bg-white mt-3 shadow-lg p-3 mb-5 bg-white rounded">
   <div className="">
-    <h3 className="float-left">Customer</h3>
+    <h3 className="float-left">User</h3>
     <button className="btn btn-outline-danger float-right" height="100px" onClick = {()=>history.push('/admin/customer')}>Edit</button>
     </div>
   <div className="card-body pd-5">
-    <img src={customer} alt="customer not found" height="300px" className="rounded mx-auto d-block mt-4" />
+    <img src={customer} alt="user not found" height="300px" className="rounded mx-auto d-block mt-4" />
   </div>
 </div>
 </td>
